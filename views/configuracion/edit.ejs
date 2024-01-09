@@ -1,0 +1,70 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row text-center"  style="display:flex; flex-wrap:wrap; padding-top: 30px; padding-bottom: 15px">
+        <table style="width: 60%">
+            <tr style="background-color: gainsboro">
+                <th  style="text-align: center">
+                    <h4>Configuración (Modifica)</h4>
+                </th>
+            </tr>    
+        </table>        
+
+    </div>
+</div>
+
+
+<div class="titulo">
+    <div class="ui main text container ">
+
+
+        <form class="ui form" action="/configuracion/<%= data._id %>?_method=PUT" method="POST">
+            <div class="form-group">
+                <label for="nombretienda">Nombre de la Tienda</label>
+                <input class="form-control" id="nombretienda" type="text" name="data[nombretienda]" 
+                    placeholder="Nombre de la Tienda" value="<%= data.nombretienda %>">
+            </div>
+            <div class="form-group">
+                <label for="email">EMail</label>
+                <input class="form-control" id="email" type="email" name="data[email]"
+                    placeholder="EMail" value="<%= data.email %>">
+            </div>
+            <div class="form-group">
+                <label for="emailpwd">Contraseña</label>
+                <input class="form-control" id="emailpwd" type="text" name="data[emailpwd]" placeholder="Contraseña"
+                    value="<%= data.emailpwd %>">
+            </div>
+            <div class="form-group">
+                <label for="rut">RUT</label>
+                <input class="form-control" id="rut" type="text" name="data[rut]"
+                    placeholder="RUT" value="<%= data.rut %>">
+            </div>
+            <div class="form-group">
+                <label for="nombredeposito">Nombre Depósito Banco</label>
+                <input class="form-control" id="nombredeposito" type="text" name="data[nombredeposito]" 
+                    placeholder="Nombre Depósito Banco" value="<%= data.nombredeposito %>">
+            </div>
+            <div class="form-group">
+                <label for="banco">Banco</label>
+                <input class="form-control" id="banco" type="text" name="data[banco]"
+                    placeholder="Banco" value="<%= data.banco %>">
+            </div>
+            <div class="form-group">
+                <label for="tipocuenta">Tipo de Cuenta</label>
+                <input class="form-control" id="tipocuenta" type="text" name="data[tipocuenta]" placeholder="Tipo Cuenta Banco"
+                    value="<%= data.tipocuenta %>">
+            </div>
+            <div class="form-group">
+                <label for="cuenta">Cuenta Banco</label>
+                <input class="form-control" id="cuenta" type="text" name="data[cuenta]" 
+                    placeholder="Cuenta Banco" value="<%= data.cuenta %>">
+            </div>
+
+            <input class="btn btn-lg btn-primary btn-block" type="submit">
+        </form>    
+
+
+    </div>
+</div>
+
+<% include ../partials/footer %>

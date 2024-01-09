@@ -1,0 +1,29 @@
+/* 
+.color-navbar{
+	background-color: #F2F3F3;
+}
+
+.letter-color{
+	color: #858585;
+}
+
+.content {
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px rgb(0,0,0,0.4),
+	             0px 8px 13px rgb(0,0,0,0.1),
+	             0px 18px 23px rgb(0,0,0,0.1)
+}
+ */
+body {
+	background: linear-gradient(to right, rgba(255,0,0,0), rgb(14, 7, 31));
+	background-size: 100%;
+	background-position: center;
+	/* font-family: lato; */
+}
+
+/* h1 {
+	color: white;
+	font-weight: 700;
+	font-size: 5em;
+} */

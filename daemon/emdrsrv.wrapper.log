@@ -1,0 +1,98 @@
+2020-08-26 19:55:50 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\berna\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\main.js --log "emdr-srv wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-08-26 19:55:50 - Started 6876
+2020-08-26 20:01:07 - Stopping emdrsrv.exe
+2020-08-26 20:01:07 - ProcessKill 6876
+2020-08-26 20:01:07 - Found child process: 13968 Name: conhost.exe
+2020-08-26 20:01:07 - Found child process: 4684 Name: node.exe
+2020-08-26 20:01:07 - Stopping process 13968
+2020-08-26 20:01:07 - Send SIGINT 13968
+2020-08-26 20:01:07 - SIGINT to 13968 failed - Killing as fallback
+2020-08-26 20:01:07 - Stopping process 4684
+2020-08-26 20:01:07 - Send SIGINT 4684
+2020-08-26 20:01:07 - SIGINT to 4684 failed - Killing as fallback
+2020-08-26 20:01:07 - Stopping process 6876
+2020-08-26 20:01:07 - Send SIGINT 6876
+2020-08-26 20:01:07 - SIGINT to 6876 failed - Killing as fallback
+2020-08-26 20:01:07 - Finished emdrsrv.exe
+2020-08-26 20:07:28 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\berna\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\main.js --log "emdr-srv wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-08-26 20:07:28 - Started 13692
+2020-08-26 20:10:12 - Stopping emdrsrv.exe
+2020-08-26 20:10:12 - ProcessKill 13692
+2020-08-26 20:10:12 - Found child process: 9644 Name: conhost.exe
+2020-08-26 20:10:12 - Found child process: 3564 Name: node.exe
+2020-08-26 20:10:13 - Stopping process 9644
+2020-08-26 20:10:13 - Send SIGINT 9644
+2020-08-26 20:10:13 - SIGINT to 9644 failed - Killing as fallback
+2020-08-26 20:10:13 - Stopping process 3564
+2020-08-26 20:10:13 - Send SIGINT 3564
+2020-08-26 20:10:13 - SIGINT to 3564 failed - Killing as fallback
+2020-08-26 20:10:13 - Stopping process 13692
+2020-08-26 20:10:13 - Send SIGINT 13692
+2020-08-26 20:10:13 - SIGINT to 13692 failed - Killing as fallback
+2020-08-26 20:10:13 - Finished emdrsrv.exe
+2020-09-01 23:38:08 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\berna\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\main.js --log "emdr-srv wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-09-01 23:38:08 - Started 7240
+2020-09-02 11:52:14 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\berna\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\main.js --log "emdr-srv wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-09-02 11:52:30 - Started 7196
+2020-09-02 20:24:25 - Stopping emdrsrv.exe
+2020-09-02 20:24:25 - ProcessKill 7196
+2020-09-02 20:24:26 - Shutdown exception
+Message:Clase no registrada
+
+Stacktrace:   en System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   en System.Management.ManagementScope.InitializeGuts(Object o)
+   en System.Management.ManagementScope.Initialize()
+   en System.Management.ManagementObjectSearcher.Initialize()
+   en System.Management.ManagementObjectSearcher.Get()
+   en winsw.WrapperService.GetChildPids(Int32 pid)
+   en winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   en winsw.WrapperService.StopIt()
+   en winsw.WrapperService.OnShutdown()
+2020-09-02 20:25:12 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\berna\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\main.js --log "emdr-srv wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-09-02 20:25:19 - Started 7236
+2020-09-03 20:59:04 - Stopping emdrsrv.exe
+2020-09-03 20:59:04 - ProcessKill 7236
+2020-09-03 20:59:04 - Shutdown exception
+Message:Clase no registrada
+
+Stacktrace:   en System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   en System.Management.ManagementScope.InitializeGuts(Object o)
+   en System.Management.ManagementScope.Initialize()
+   en System.Management.ManagementObjectSearcher.Initialize()
+   en System.Management.ManagementObjectSearcher.Get()
+   en winsw.WrapperService.GetChildPids(Int32 pid)
+   en winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   en winsw.WrapperService.StopIt()
+   en winsw.WrapperService.OnShutdown()
+2020-09-03 20:59:49 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\berna\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\main.js --log "emdr-srv wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-09-03 20:59:49 - Started 6924
+2020-09-04 16:21:20 - Stopping emdrsrv.exe
+2020-09-04 16:21:20 - ProcessKill 6924
+2020-09-04 16:21:21 - Shutdown exception
+Message:Clase no registrada
+
+Stacktrace:   en System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   en System.Management.ManagementScope.InitializeGuts(Object o)
+   en System.Management.ManagementScope.Initialize()
+   en System.Management.ManagementObjectSearcher.Initialize()
+   en System.Management.ManagementObjectSearcher.Get()
+   en winsw.WrapperService.GetChildPids(Int32 pid)
+   en winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   en winsw.WrapperService.StopIt()
+   en winsw.WrapperService.OnShutdown()
+2020-09-04 16:22:04 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\berna\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\main.js --log "emdr-srv wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-09-04 16:22:04 - Started 7100
+2020-09-05 17:31:26 - Stopping emdrsrv.exe
+2020-09-05 17:31:26 - ProcessKill 7100
+2020-09-05 17:31:26 - Found child process: 6232 Name: conhost.exe
+2020-09-05 17:31:26 - Found child process: 8800 Name: node.exe
+2020-09-05 17:31:26 - Stopping process 6232
+2020-09-05 17:31:26 - Send SIGINT 6232
+2020-09-05 17:31:26 - SIGINT to 6232 failed - Killing as fallback
+2020-09-05 17:31:26 - Stopping process 8800
+2020-09-05 17:31:26 - Send SIGINT 8800
+2020-09-05 17:31:26 - SIGINT to 8800 failed - Killing as fallback
+2020-09-05 17:31:26 - Stopping process 7100
+2020-09-05 17:31:26 - Send SIGINT 7100
+2020-09-05 17:31:26 - SIGINT to 7100 failed - Killing as fallback
+2020-09-05 17:31:26 - Finished emdrsrv.exe

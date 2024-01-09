@@ -1,0 +1,36 @@
+<% include ../partials/header %>
+
+<link rel="stylesheet" href="/stylesheets/app.css">
+
+<div class="container">
+    <header class="jumbotron" style="padding: 15px;">
+        <div class="container">
+            <h2 style="margin-top: 0px;">Lista de Imágenes</h2>
+            <a class="btn btn-primary btn-large" href="/producto/new">Nuevo Producto</a>
+        </div>
+    </header>
+
+
+
+    <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+        <% data.forEach(function(e){ %>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src=<%= e.imagen %>>
+                <div class="caption">
+                    <h4><%= e.descripcion %></h4>
+                </div>
+                <div>
+                    <a href="/producto/<%= e._id %>/edit" class="btn btn-primary">Modifica</a>
+                    <a href="/producto/<%= e._id %>/delete" class="btn btn-primary">Elimina</a>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</div>
+
+
+
+
+<% include ../partials/footer %>

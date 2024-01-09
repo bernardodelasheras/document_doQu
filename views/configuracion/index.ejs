@@ -1,0 +1,54 @@
+<% include ../partials/header %>
+
+<script src="/stylesheets/grillasimple.js"></script>
+
+<div class="container">
+
+    <header class="jumbotron" style="padding: 15px;">
+        <div class="container">
+            <h2 style="margin-top: 0px;">Configuración</h2>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="row"  style="display:flex; flex-wrap:wrap;">
+            <table id="grillasimple" class="display compact" style="width:100%;">
+                <thead>
+                <tr>
+                    <th>Nombre Tienda</th>
+                    <th>Email</th>
+                    <th>Rut Banco</th>
+                    <th>Banco</th>
+                    <th>Tipo Cuenta</th>
+                    <th>Cuenta</th>
+                    <th></th>
+                </tr>
+                </thead>
+
+                <tbody >
+                <% data.forEach(function(e){ %>
+
+                <tr>
+                    <td> <%= e.nombretienda %>   </td>
+                    <td> <%= e.email %> </td>
+                    <td> <%= e.rut %> </td>
+                    <td> <%= e.banco %> </td>
+                    <td> <%= e.tipocuenta %> </td>
+                    <td> <%= e.cuenta %> </td>
+
+                    <td><a href="/configuracion/<%= e._id %>/edit" class="btn btn-xs btn-primary ">Modificar</a></td>
+                </tr>
+
+                <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<% include ../partials/footer %>

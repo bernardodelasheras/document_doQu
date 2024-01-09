@@ -1,0 +1,39 @@
+{
+    "name": "emdr",
+    "version": "1.0.0",
+    "engines": {
+        "node": "14.18.1"
+    },
+    "scripts": {
+        "start": "node main.js"
+    },
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "berna",
+    "contributors": [],
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "connect-flash": "^0.1.1",
+        "dotenv": "^8.2.0",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "express-sanitizer": "^1.0.5",
+        "express-session": "^1.17.0",
+        "express-validator": "^5.3.1",
+        "http": "0.0.1-security",
+        "method-override": "^3.0.0",
+        "moment": "^2.27.0",
+        "mongoose": "^5.13.21",
+        "numeral": "^2.0.6",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "passport-local-mongoose": "^6.0.1",
+        "path": "^0.12.7",
+        "request": "^2.88.0"
+    }
+}

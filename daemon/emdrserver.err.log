@@ -1,0 +1,17 @@
+Error: Failed to lookup view "inicial" in views directory "C:\WINDOWS\system32\views"
+    at Function.render (C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\express\lib\application.js:580:17)
+    at ServerResponse.render (C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\express\lib\response.js:1012:7)
+    at C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\routes\index.js:17:17
+    at C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\mongoose\lib\helpers\promiseOrCallback.js:24:16
+    at Function.<anonymous> (C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\mongoose\lib\model.js:4850:21)
+    at _done (C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\mongoose\lib\model.js:3120:12)
+    at C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\mongoose\lib\model.js:3129:18
+    at callbackWrapper (C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\mongoose\lib\model.js:3085:11)
+    at C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\mongoose\lib\model.js:4827:16
+    at C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\mongoose\lib\helpers\promiseOrCallback.js:24:16
+    at C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\mongoose\lib\model.js:4850:21
+    at model.<anonymous> (C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\mongoose\lib\model.js:490:7)
+    at C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\kareem\index.js:315:21
+    at next (C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\kareem\index.js:209:27)
+    at C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\kareem\index.js:182:9
+    at C:\Users\berna\OneDrive\NodeJs\NetBeans\EMDRv3\node_modules\kareem\index.js:507:38

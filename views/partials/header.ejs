@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Administración Tienda</title>
+
+        <link rel="stylesheet" type="text/css" href="/stylesheets/lib/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/lib/jquery-ui.min.css">
+        <link rel="stylesheet" href="/stylesheets/lib/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="/stylesheets/lib/buttons.dataTables.min.css">
+        <link rel="stylesheet" href="/stylesheets/lib/responsive.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/lib/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/lib/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+
+
+        
+
+    </head>
+    <body>
+
+
+        <script src="/stylesheets/lib/jquery-3.5.1.js"></script>
+        <script src="/stylesheets/lib/jquery-ui.min.js"></script>
+        <script src="/stylesheets/lib/jquery.dataTables.min.js"></script>
+        <script src="/stylesheets/lib/dataTables.buttons.min.js"></script>
+        <script src="/stylesheets/lib/dataTables.responsive.min.js"></script>
+        <script src="/stylesheets/lib/dataTables.bootstrap.min.js"></script>
+        <script src="/stylesheets/lib/jszip.min.js"></script>
+        <script src="/stylesheets/lib/pdfmake.min.js"></script>
+        <script src="/stylesheets/lib/vfs_fonts.js"></script>
+        <script src="/stylesheets/lib/buttons.html5.min.js"></script>
+        <script src="/stylesheets/lib/bootstrap.js"></script>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top color-navbar">
+            <div class="container">
+        
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-example"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+        
+                    <% if (!currentUser) { %>
+                    <a href="#" class="navbar-brand">
+                        Administración</a>
+                    <% } else { %>
+                    <a href="#" class="navbar-brand">
+                        Administración / (usuario: <%= currentUser.username %>)</a>
+                    <% } %>
+                </div>
+        
+                <div class="collapse navbar-collapse" id="nav-example">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+        
+                    <ul class="nav navbar-nav navbar-right">
+        
+        
+                        <li>
+                            <div class="dropdown" style="margin-top: 10px; margin-right: 10px; margin-left: 10px">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Administración
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="/configuracion/index">Configuracion</a></li>
+                                    <li><a href="/producto/index">Productos</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <% if (!currentUser) { %>
+                                    <li><a href="/login">Login</a></li>
+                                    <li><a href="/register" style="visibility: hidden;">Signup</a></li>
+                                    <% } else { %>
+                                    <li><a href="/logout">Logout</a></li>
+                                    <% } %>
+                                </ul>
+                            </div>
+                        </li>
+        
+                    </ul>
+                </div>
+        
+            </div>
+        </nav>
+
+
+
+        <div class="container" style="display:flex; flex-wrap:wrap; padding-top: 40px; padding-bottom: 15px; margin-top: 20px;">
+            <% if (error && error.length > 0) { %>
+                <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                </div>
+            <% } %>
+
+            <% if (success && success.length > 0) { %>		
+                <div class="alert alert-success" role="alert">
+                    <%= success %>
+                </div>
+            <% } %>
+
+            <% if (errorList && errorList.length > 0) { %>		
+                <div class="alert alert-success" role="alert">
+                    <h4>Hay errores en los datos enviados</h4>
+                    <ul>
+                        <% errorList.forEach(function(e){ %>
+                            <li><%= e.msg %></li>
+                        <% }) %>    
+                    </ul>
+                </div>
+            <% } %>
+
+
+        </div>	
+
